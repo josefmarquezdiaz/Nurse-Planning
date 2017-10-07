@@ -1,0 +1,139 @@
+/* Makeshift CSS Reset */
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*general*/
+div#sidebar, div.message {
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    width: auto;
+    /*width: 940px;*/
+    font: 13px/22px Helvetica, Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 44px;
+    padding: 22px 0;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+
+#nurse {
+    margin-top: 4em;
+}
+#intro {
+    margin-top: 0px;
+    /*margin-top: 66px;*/
+    padding: 44px;
+    /*background: #484848;*/
+    background: green;
+}
+.oblique{
+	font-style: oblique;
+}
+#instructions{
+	font-family:"Lucida Console", Monaco, monospace;
+}
+
+#content {
+    display: table;
+	height: 100%;
+}
+#mainContent {
+	display: table-cell;
+	width: 90%;
+	/*width: 620px;*/
+	padding-left: 22px;
+}
+
+.section {
+   padding-bottom: 22px;
+ }
+
+.editable[readonly="readonly"]{
+	border-style: none;
+}
+.noEditable[readonly="readonly"]{
+	border-style: none;
+	background: #f0f0f0;
+}
+#mainInfo input, #secondInfo input{
+	display:block;
+}
+
+#name, #new_name, #surname, #new_surname,#phone_number, #address, #new_phone_number, #new_address, #dosage, #new_dosage, #duration, #new_duration, #hours, #new_hours, #bag_volume, #new_bag_volume, #administration, #new_administration{
+	width: 20em;
+}
+
+.commands{
+	float: right;
+    margin-right: 10em;
+}
+
+/*patients list*/
+.patient{
+	padding-bottom: 22px;
+    margin-top: 1em;
+    padding-bottom: 3em;
+    border-bottom: thin dotted;
+}
+
+.patientName{
+	font-weight:bold;
+}
+
+/*medicaments list*/
+.medicament{
+    padding-bottom: 22px;
+    margin-top: 1em;
+    padding-bottom: 3em;
+    border-bottom: thin dotted;
+}
+
+.medicamentName{
+    font-weight:bold;
+}
+
+/* side bar */
+div#sidebar {
+	display: table-cell;
+	width: 200px;
+	padding-right: 12px;
+	background: lightgreen;
+}
+
+#sidebar ul li a {
+        display: block;
+        margin-right: 20px;
+        width: 140px;
+        font-size: 14px;
+        line-height: 44px;
+        text-align: left;
+        text-decoration: none;
+        color: #777;
+    }
+#sidebar ul li a:hover {
+	color: #fff;
+}
+
+#sidebar ul li.selected a {
+	color: #fff;
+}
+
+.footercenter{
+    display: block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    width: 212px;
+    height: 75px;
+}

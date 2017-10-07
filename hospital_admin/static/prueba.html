@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="hospital.css">
+    <title>Hospital</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="hospital_client.js"></script>
+</head>
+
+<body>
+<div id="intro">
+    <h1>Hospital administration panel</h1>
+    <a href="/hospital_admin/ui.html">HOME</a>
+    <span id="instructions">Click on a name in the sidebar to edit/delete a nurse info. Press <span class="oblique">"Add Nurse"</span> to add a new nurse.</span>
+</div>
+<div id="content">
+    <div id="sidebar">
+        <!-- Side bar area -->
+        <ul id="nurse_list">
+            <li><a href="#">name</a></li>
+        </ul>
+        <ul>
+            <input id="addNurse" type="button" value="Add Nurse"/>
+        </ul>
+    </div>
+    <div id="mainContent">
+        <div id="existingNurseData">
+            <!-- Main content area -->
+            <div class="section" id="NurseInfo">
+                <form action="#" id="nurse_form">
+                    <div class="commands">
+                        <input id="deleteNurse" type="button" value="Delete"/>
+                    </div>
+                </form>
+                <form action="#" id="nurse_profile">
+                    <h3><u>Nurse profile</u></h3>
+
+                    <p id="mainInfo">
+                        <label for="name">Name</label>
+                        <input class="editable" name="name" id="name" type="text" required/>
+
+                        <label for="surname">Surname</label>
+                        <input class="editable" name="surname" id="surname" type="text" required/>
+
+                        <label for="phone_number">Phone number</label>
+                        <input class="editable" name="phone_number" id="phone_number" type="integer" required/>
+
+                        <label for="address">Address</label>
+                        <input class="editable" name="address" id="address" type="text" required/>
+                    </p>
+
+                    <div class="commands">
+                        <input id="saveNurse" type="button" value="Save"/>
+                    </div>
+                </form>
+            </div>
+            <div class="section" id="patients">
+                <!-- Patient list area -->
+                <h3><u>Patient List</u></h3>
+
+                <div id="list">
+                    <div class="patient">
+                        <form action="#">
+                            <span class="patientName">Pepito Grillo</span>
+
+                            <p class="patientRoom"> 11 </p>
+
+                            <p class="patientMedication"> http://hospital/api/nur-231/patients/pat-1/medication/ </p>
+
+                            <p class="patientNurse"> http://hospital/api/nur-231/ </p>
+
+                            <div class="commands">
+                                <input id="deletePatient" type="button" value="Delete"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <!-- Medicament list area -->
+                <form action="#" id="medicament_form">
+                    <div class="commands">
+                        <input id="addMedicament" type="button" value="Add"/>
+                    </div>
+                </form>
+                <form action="#" id="medicaments">
+                    <h3><u>Medicament List</u></h3>
+
+                    <div id="list2">
+                        <div class="medicament">
+                            <span class="medicamentName">Paracetamol (room 23) </span>
+
+                            <p class="medicamentPrescription"> 2 litros por semana cada segundo</p>
+
+                            <p class="medicamentBagVolume"> 3 litros via oral </p>
+
+                            <p class="medicamentPatient"> http://hospital/api/nur-231/patients/pat-1/ </p>
+
+                            <p class="medicamentNurse"> http://hospital/api/nur-231/ </p>
+
+                            <div class="commands">
+                                <input id="deleteMedicament" type="button" value="Delete"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="newNurseData">
+            <form action="#" id="create_nurse_form">
+                <h3><u>Nurse profile</u></h3>
+
+                <p id="mainInfo">
+                    <label for="new_name">Name</label>
+                    <input class="editable" name="name" id="new_name" type="text" required/>
+
+                    <label for="new_surname">Surname</label>
+                    <input class="editable" name="surname" id="new_surname" type="text" required/>
+
+                    <label for="new_phone_number">Phone number</label>
+                    <input class="editable" name="phone_number" id="new_phone_number" type="text" required/>
+
+                    <label for="new_address">Address</label>
+                    <input class="editable" name="address" id="new_address" type="text" required/>
+                </p>
+
+                <div class="commands">
+                    <input id="createNurse" type="button" value="Create"/>
+                </div>
+            </form>
+        </div>
+        <div id="newMedicamentData">
+            <form action="#" id="create_medicament_form">
+                <h3><u>New medicament</u></h3>
+
+                <p id="mainInfo">
+                    <label for="new_name">Name</label>
+                    <input class="editable" name="name" id="new_name" type="text" required/>
+
+                    <label for="new_dosage">Dosage</label>
+                    <input class="editable" name="dosage" id="new_dosage" type="text" required/>
+
+                    <label for="new_duration">Duration</label>
+                    <input class="editable" name="duration" id="new_duration" type="text" required/>
+
+                    <label for="new_hours">Hours</label>
+                    <input class="editable" name="hours" id="new_hours" type="text" required/>
+
+                    <label for="new_bag_volume">Bag Volume</label>
+                    <input class="editable" name="bag_volume" id="new_bag_volume" type="text" required/>
+
+                    <label for="new_administration">Administration</label>
+                    <input class="editable" name="administration" id="new_administration" type="text" required/>
+                </p>
+
+                <div class="commands">
+                    <input id="createMedicament" type="button" value="Create"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <a href="/hospital_admin/ui.html" title="Back to the Home page"><b>HOME</b></a> | <a href="#"
+                                                                                         title="To the top of this page"><b>BACK
+    TO TOP</b></a>
+
+    <div>
+        <img id="adbut" class="footercenter" src="NursePlanningLogo.png">
+    </div>
+    <div class="container-fluid">
+        <b class="copyright">&copy; 2015 </b>All rights reserved.
+
+    </div>
+</div>
+</body>
+
+</html>

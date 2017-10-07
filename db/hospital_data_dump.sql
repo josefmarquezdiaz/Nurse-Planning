@@ -1,0 +1,53 @@
+INSERT INTO "nurses_profile" VALUES(0,'Mateo','Gil',987654321,'Bahia Pikachu N 4');
+INSERT INTO "nurses_profile" VALUES(1,'Jussi','Hiltunen',912345678,'Roca Geodude N 404');
+INSERT INTO "nurses_profile" VALUES(2,'Peter','Languila',918273645,'Bajo el mar N 97');
+INSERT INTO "nurses_profile" VALUES(3,'Google','Maps',987654231,'Suecia N 51');
+INSERT INTO "nurses_profile" VALUES(4,'Yahoo','Answers',912252556,'Muro de arriba N 92');
+INSERT INTO "nurses_profile" VALUES(6,'Ask','Me',918275235,'Bajo el suelo N 23');
+INSERT INTO "nurses_profile" VALUES(7,'Tomate','Podrido',987656436,'Bahia del Sol N 124');
+INSERT INTO "nurses_profile" VALUES(8,'Parguela','Del Norte',91231214,'Calle carbón N 53');
+INSERT INTO "nurses_profile" VALUES(9,'Senpai','Teacher',918412124,'Calle retarded N 7');
+INSERT INTO "nurses_profile" VALUES(10,'Pocholo','el del Bombo',91231215,'Calle charcoal N 252');
+INSERT INTO "nurses_profile" VALUES(11,'Borja','Mari',918412125,'Calle SmartTV N 67');
+
+INSERT INTO "doctors_profile" VALUES(0,'Pepe','Botella',967854321,'Smeargle street N 7');
+INSERT INTO "doctors_profile" VALUES(1,'Juana','De Arco',921345678,'Mont de feu N 28');
+
+INSERT INTO "patients_profile" VALUES(0,'Juan Carlos','Primero',1408,1,'Palacio de la Zarzuela',1,1);
+INSERT INTO "patients_profile" VALUES(1,'Duquesa','de Alba',1409,0,'Casa de Alba',0,1);
+INSERT INTO "patients_profile" VALUES(2,'Esperanza','Aguirre',1410,2,'Puerta del Sol',0,0);
+INSERT INTO "patients_profile" VALUES(3,'Manuel','Chaves',1411,3,'Ceuta',2,0);
+INSERT INTO "patients_profile" VALUES(4,'Miguel','de Unamuno',1412,4,'Murcia',1,1);
+INSERT INTO "patients_profile" VALUES(6,'Eric','Presley',1413,5,'California',0,1);
+INSERT INTO "patients_profile" VALUES(7,'Pilar','Moreno',1414,6,'Sevilla',0,0);
+INSERT INTO "patients_profile" VALUES(8,'Ramón','Cín',1415,7,'Cadiz',2,0);
+INSERT INTO "patients_profile" VALUES(9,'Pablo','de la Cruz',1416,8,'El Palo',2,1);
+INSERT INTO "patients_profile" VALUES(10,'Félix','Durán',1417,9,'La Cala del Moral',0,1);
+INSERT INTO "patients_profile" VALUES(11,'Juan José','Ariza',1418,10,'Marbella',3,0);
+INSERT INTO "patients_profile" VALUES(12,'Juan Luis','Carrasco',1419,11,'Rincón de la Victoria',4,0);
+INSERT INTO "patients_profile" VALUES(13,'Jose','Marquez',1420,12,'Malaga',3,1);
+INSERT INTO "patients_profile" VALUES(14,'Clement','Stein',1421,13,'Toulouse',6,1);
+INSERT INTO "patients_profile" VALUES(15,'Cristina','Gant',1422,14,'Malaga',11,0);
+INSERT INTO "patients_profile" VALUES(16,'Irene','Robledo',1423,15,'Calle del Caballero',10,0);
+INSERT INTO "patients_profile" VALUES(17,'Perico','el de los palotes',1424,16,'Bosque',10,1);
+INSERT INTO "patients_profile" VALUES(18,'Tyrion','Lanister',1425,17,'Desembarco del Rey',7,1);
+INSERT INTO "patients_profile" VALUES(19,'Cersei','Lanister',1426,18,'Desembarco del Rey',8,0);
+INSERT INTO "patients_profile" VALUES(20,'Jon','Nieve',1427,19,'El Muro',8,0);
+INSERT INTO "patients_profile" VALUES(21,'Bran','Stark',1428,20,'Mas ala del muro',9,1);
+INSERT INTO "patients_profile" VALUES(22,'Theon','Greyjoy',1429,21,'Calle Sinpicha',7,1);
+INSERT INTO "patients_profile" VALUES(23,'Khalessi','ama de Dragones',1430,22,'El nido de Dragones',1,0);
+INSERT INTO "patients_profile" VALUES(24,'Ned','Flanders',1431,23,'Evergreen Terrace 742',0,0);
+
+
+INSERT INTO "medicaments" VALUES(0,'Paracetamol','1 gr','1 week','every 8 hours','100 ml','intravenous',1);
+INSERT INTO "medicaments" VALUES(1,'Betadine','20 ml','2 days','every 6 hours','150 ml','cutaneous',1);
+INSERT INTO "medicaments" VALUES(2,'Morfina','70 gr','5 days','every 30 minutes','200 ml','intravenous',0);
+INSERT INTO "medicaments" VALUES(3,'Lidocaina','12 gr','1 week','every 7 hours','100 ml','intravenous',2);
+INSERT INTO "medicaments" VALUES(4,'Aciclobir','27 ml','2 days','every 6 hours','150 ml','cutaneous',3);
+INSERT INTO "medicaments" VALUES(12,'Gelocatil','24 gr','6 days','every 45 minutes','200 ml','intravenous',4);
+INSERT INTO "medicaments" VALUES(6,'Lizipaina','45 gr','1 week','every 2 hours','100 ml','intravenous',1);
+INSERT INTO "medicaments" VALUES(7,'Enantyum','100 ml','4 days','every 4 hours','150 ml','cutaneous',6);
+INSERT INTO "medicaments" VALUES(8,'Diacepán','30 gr','2 weeks','every 30 minutes','200 ml','intravenous',7);
+INSERT INTO "medicaments" VALUES(9,'Inespil','90 gr','1 week','every 10 hours','100 ml','intravenous',8);
+INSERT INTO "medicaments" VALUES(10,'Oxidina','40 ml','2 days','every 12 hours','150 ml','cutaneous',9);
+INSERT INTO "medicaments" VALUES(11,'Clembuterol','0,005 ml','4 days','every 10 minutes','200 ml','intravenous',10);
