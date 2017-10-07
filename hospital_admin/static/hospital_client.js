@@ -248,7 +248,7 @@ function get_patients_list() {
 }
 /*
 
-End. New Addition on October 7 2017
+End. New Addition on October 7 2017.
 
 */
 
