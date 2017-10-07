@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb902fee-be96-42a1-93e0-bd56a4dec97c" name="Default" comment="" />
+    <list default="true" id="bb902fee-be96-42a1-93e0-bd56a4dec97c" name="Default" comment="Prueba 1.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/hospitalserver.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    </list>
     <ignored path="hospitalserver.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -37,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hospital_client.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hospital_client.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hospital_admin/static/hospital_client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="469" column="25" lean-forward="false" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="25" />
+            <state relative-caret-position="295">
+              <caret line="250" column="36" lean-forward="false" selection-start-line="250" selection-start-column="36" selection-end-line="250" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -113,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ui.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hospital_admin/static/ui.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="174" column="89" lean-forward="false" selection-start-line="174" selection-start-column="89" selection-end-line="174" selection-end-column="89" />
+            <state relative-caret-position="210">
+              <caret line="164" column="51" lean-forward="true" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -163,10 +175,12 @@
       <find>get_nurses_list</find>
       <find>existingNurseData</find>
       <find>newNurseData</find>
+      <find>patients</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -543,6 +557,21 @@
       <option name="presentableId" value="Default" />
       <updated>1441641877152</updated>
     </task>
+    <task id="LOCAL-00001" summary="Prueba 1.">
+      <created>1507374476349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1507374476349</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Prueba 1.">
+      <created>1507374643464</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507374643464</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -605,6 +634,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Prueba 1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba 1." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1146,18 +1179,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hospital_admin/static/hospital_client.js">
+    <entry file="file://$PROJECT_DIR$/hospital_admin/static/ui.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="469" column="25" lean-forward="false" selection-start-line="469" selection-start-column="8" selection-end-line="469" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="164" column="51" lean-forward="true" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hospital_admin/static/ui.html">
+    <entry file="file://$PROJECT_DIR$/hospital_admin/static/hospital_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="174" column="89" lean-forward="false" selection-start-line="174" selection-start-column="89" selection-end-line="174" selection-end-column="89" />
+        <state relative-caret-position="295">
+          <caret line="250" column="36" lean-forward="false" selection-start-line="250" selection-start-column="36" selection-end-line="250" selection-end-column="36" />
           <folding />
         </state>
       </provider>
