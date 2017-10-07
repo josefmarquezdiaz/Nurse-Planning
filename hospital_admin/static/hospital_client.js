@@ -202,7 +202,7 @@ function deleteNurse(apiurl) {
 
 /*
 
-New Addition on October 7 2017
+New Addition on October 7 2017.
 
 */
 function get_patients_list() {
