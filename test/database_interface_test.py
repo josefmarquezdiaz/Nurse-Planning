@@ -22,7 +22,7 @@ class NurseDbAPITestCase(DatabaseAPITestCase):
     nurse2 = {'id':'nur-2','name':'Peter','surname':'Languila','phone number':918273645,'address':'Bajo el mar N 97'}
     nurse2_id = 'nur-2'
     no_nurse_id = 'nur-5'
-    initial_size = 3
+    initial_size = 11
 
     @classmethod
     def setUpClass(cls):
@@ -223,7 +223,7 @@ class PatientDbAPITestCase(DatabaseAPITestCase):
     patient1 = {'id':'pat-1','name':'Duquesa', 'surname':'de Alba','room':2402,'phone number':0,'address':'Casa de Alba','nurse id':'nur-0','doctor id':'doc-1'}
     patient1_id = 'pat-1'
     no_patient_id = 'pat-5'
-    initial_size = 4
+    initial_size = 24
 
     @classmethod
     def setUpClass(cls):
@@ -406,7 +406,7 @@ class MedicamentDbAPITestCase(DatabaseAPITestCase):
     medicament2 = {'id':'med-2','name':'Morfina','dosage':'7 kilos','duration':'2 years','hours':'every 30 minutes','bag volume':'200 ml','administration':'intravenous','patient id':'pat-0'}
     medicament2_id = 'med-2'
     no_medicament_id = 'med-5'
-    initial_size = 3
+    initial_size = 12
 
     @classmethod
     def setUpClass(cls):
@@ -414,7 +414,7 @@ class MedicamentDbAPITestCase(DatabaseAPITestCase):
 
     def test_medicaments_table_created(self):
         '''
-        Checks that the table initially contains 3 medicaments (check hospital_data_dump.sql)
+        Checks that the table initially contains 12 medicaments (check hospital_data_dump.sql)
         '''
         print '('+self.test_medicaments_table_created.__name__+')', self.test_medicaments_table_created.__doc__
         #Create the SQL Statement
