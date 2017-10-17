@@ -9,7 +9,6 @@ import hospital.database
 db_path ='db/hospital_test.db'
 #For non persistent database
 #db = hospital.database.HospitalNonPersistentDatabase()
-#New exercise
 db = hospital.database.HospitalDatabase(db_path)
 
 class ResourcesAPITestCase(unittest.TestCase):
@@ -59,12 +58,12 @@ class NursesListTestCase (ResourcesAPITestCase):
             self.assertEquals(resp.status_code,200)
             data = json.loads(resp.data)
             nurses_list = data['nurses_list']
-            self.assertEquals(len(nurses_list),3)
+            self.assertEquals(len(nurses_list),11)
             nur0 = nurses_list [0]
             self.assertIn('name',nur0)
             self.assertIn('surname',nur0)
             link0 = nur0['link']
-            self.assertIn(resources.api.url_for(resources.Nurses_list),link0['href'])  
+            self.assertIn(resources.api.url_for(resources.Nurses_list),link0['href'])
 
     def test_add_nurse(self):
         '''
@@ -142,7 +141,7 @@ class NurseTestCase (ResourcesAPITestCase):
 
     def test_modify_nurse(self):
         '''
-        Modify an exsiting nurse and check that the nurse has been modified correctly in the server
+        Modify an existing nurse and check that the nurse has been modified correctly in the server
         '''
         print self.test_modify_nurse.__doc__
         resp = self.client.put(self.url,
@@ -233,7 +232,7 @@ class PatientsListTestCase (ResourcesAPITestCase):
             self.assertEquals(link['rel'],'related')
             self.assertEquals(link['href'],resources.api.url_for(resources.Nurses_profile,nurseid='nur-0'))
             patients_list = data['nurses_patient_list']
-            self.assertEquals(len(patients_list),2)
+            self.assertEquals(len(patients_list),6)
             pat0 = patients_list[0]
             self.assertIn('name',pat0)
             self.assertIn('surname',pat0)
@@ -383,7 +382,7 @@ class MedicationListTestCase (ResourcesAPITestCase):
             self.assertEquals(link['rel'],'related')
             self.assertEquals(link['href'],resources.api.url_for(resources.Nurses_patient_profile,nurseid='nur-0',patientid='pat-1'))
             medicaments_list = data['patient_medication_list']
-            self.assertEquals(len(medicaments_list),2)
+            self.assertEquals(len(medicaments_list),3)
             med0 = medicaments_list [0]
             self.assertIn('name',med0)
             link0 = med0['link']

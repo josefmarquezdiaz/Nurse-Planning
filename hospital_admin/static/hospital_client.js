@@ -14,7 +14,7 @@ var DEBUG = true,
 /**** START RESTFUL CLIENT****/
 
 function get_nurses_list() {
-    //http://localhost:5000/forum/api/nurses
+    //http://localhost:5000/hospital/api/nurses
     var arr = [APP_URL, "nurses"];
     var apiurl = arr.join("/");
     return $.ajax({
@@ -206,7 +206,7 @@ New Addition on October 7 2017.
 
 */
 function get_patients_list() {
-    //http://localhost:5000/forum/api/nurses
+    //http://localhost:5000/hospital/api/patients
     var arr = [APP_URL, "nurses"];
     var apiurl = arr.join("/");
     return $.ajax({

@@ -30,7 +30,7 @@ class NurseDbAPITestCase(DatabaseAPITestCase):
 
     def test_nurses_table_created(self):
         '''
-        Checks that the table initially contains 3 nurses (check hospital_data_dump.sql)
+        Checks that the table initially contains 11 nurses (check hospital_data_dump.sql)
         '''
         print '('+self.test_nurses_table_created.__name__+')', self.test_nurses_table_created.__doc__
         #Create the SQL Statement
@@ -220,7 +220,7 @@ class NurseDbAPITestCase(DatabaseAPITestCase):
 class PatientDbAPITestCase(DatabaseAPITestCase):
     patient0 = {'id':'pat-0','name':'Juan Carlos','surname':'Primero','room':1408,'phone number':1,'address':'Palacio de la Zarzuela','nurse id':'nur-1','doctor id':'doc-1'}
     patient0_id = 'pat-0'
-    patient1 = {'id':'pat-1','name':'Duquesa', 'surname':'de Alba','room':2402,'phone number':0,'address':'Casa de Alba','nurse id':'nur-0','doctor id':'doc-1'}
+    patient1 = {'id':'pat-1','name':'Duquesa', 'surname':'de Alba','room':1409,'phone number':0,'address':'Casa de Alba','nurse id':'nur-0','doctor id':'doc-1'}
     patient1_id = 'pat-1'
     no_patient_id = 'pat-5'
     initial_size = 24
@@ -231,7 +231,7 @@ class PatientDbAPITestCase(DatabaseAPITestCase):
 
     def test_patients_table_created(self):
         '''
-        Checks that the table initially contains 1 patient for the nurse 0 (check hospital_data_dump.sql)
+        Checks that the table initially contains 24 patients(check hospital_data_dump.sql)
         '''
         print '('+self.test_patients_table_created.__name__+')', self.test_patients_table_created.__doc__
         #Create the SQL Statement
@@ -311,9 +311,9 @@ class PatientDbAPITestCase(DatabaseAPITestCase):
         Test that get_nurses_patient_list works correctly
         '''
         print '('+self.test_get_nurses_patient_list.__name__+')', self.test_get_nurses_patient_list.__doc__
-        patients = db.get_nurses_patient_list('1')
+        patients = db.get_nurses_patient_list('nur-1')
         #Check that the size is correct
-        self.assertEquals(len(patients), 1)
+        self.assertEquals(len(patients), 3)
         #Iterate throug patients and checks if the patients with patient0_id and patient1_id are correct:
         for patient in patients:
             if patient['id'] == self.patient0_id:
@@ -401,9 +401,9 @@ class PatientDbAPITestCase(DatabaseAPITestCase):
 
 
 class MedicamentDbAPITestCase(DatabaseAPITestCase):
-    medicament1 = {'id':'med-1','name':'Betadine','dosage':'20ml','duration':'2 days','hours':'every 6 hours','bag volume':'150 ml','administration':'cutaneous','patient id':'pat-1'}
+    medicament1 = {'id':'med-1','name':'Betadine','dosage':'20 ml','duration':'2 days','hours':'every 6 hours','bag volume':'150 ml','administration':'cutaneous','patient id':'pat-1'}
     medicament1_id = 'med-1'
-    medicament2 = {'id':'med-2','name':'Morfina','dosage':'7 kilos','duration':'2 years','hours':'every 30 minutes','bag volume':'200 ml','administration':'intravenous','patient id':'pat-0'}
+    medicament2 = {'id':'med-2','name':'Morfina','dosage':'70 gr','duration':'5 days','hours':'every 30 minutes','bag volume':'200 ml','administration':'intravenous','patient id':'pat-0'}
     medicament2_id = 'med-2'
     no_medicament_id = 'med-5'
     initial_size = 12
@@ -494,7 +494,7 @@ class MedicamentDbAPITestCase(DatabaseAPITestCase):
         Test that get_patient_medication_list works correctly
         '''
         print '('+self.test_get_patient_medication_list.__name__+')', self.test_get_patient_medication_list.__doc__
-        medicaments = db.get_patient_medication_list('0')
+        medicaments = db.get_patient_medication_list('pat-0')
         #Check that the size is correct
         self.assertEquals(len(medicaments), 1)
         #Iterate throug medicaments and checks if the medicaments with medicament1_id and medicament2_id are correct:

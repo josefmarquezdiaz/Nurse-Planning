@@ -333,7 +333,7 @@ class HospitalDatabase(HospitalDatabaseInterface):
             cur = con.cursor()
             # Execute the pragma command
             cur.execute('PRAGMA foreign_keys')
-            # We know we retrieve just one record: use fetchone()
+            # I know I retrieve just one record: use fetchone()
             data = cur.fetchone()
             data_text = 'ON' if data == (1,) else 'OFF'            
             print "Foreign Keys status: %s" % data_text                
@@ -363,7 +363,7 @@ class HospitalDatabase(HospitalDatabaseInterface):
             cur.execute(keys_on)
             # execute the pragma check command
             cur.execute('PRAGMA foreign_keys')
-            # we know we retrieve just one record: use ftchone()
+            # I know I retrieve just one record: use fetchone()
             data = cur.fetchone()
             data_text = 'ON' if data == (1,) else 'OFF'            
             print "Foreign Keys status: %s" % data_text
